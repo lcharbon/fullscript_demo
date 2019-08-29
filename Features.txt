@@ -12,3 +12,4 @@ Settings in JSON file.
 Search request limiting.
 Palette object factory.
 Node script to quickly generate view & components.
+S3 Deploy
