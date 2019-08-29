@@ -1,0 +1,28 @@
+// Core
+import React from 'react';
+import $T from '../../support/translations.js';
+
+// Views
+import View from '../BaseView/BaseView.js';
+
+// Components
+
+// Styles
+import styles from './{{ name }}.module.scss';
+
+class {{ name }} extends View {
+    styles = { ...this.styles, ...styles };
+    
+    constructor(props, context) {
+        super(props, context);
+    }
+    
+    render() {
+        return (
+            <div className={this.styles["main"]}>
+            </div>
+        )
+	}
+}
+
+export default {{ name }};

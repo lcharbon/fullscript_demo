@@ -1,0 +1,72 @@
+@import "../../ui.module.scss";
+
+.main {
+    display: inline-block;
+    padding: 16px 25px;
+}
+
+.photo {
+    display: block;
+    width: 420px;
+    height: 315px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 450px;
+    height: 480px;
+    background-color: $tertiary-color;
+    padding-top: 20px;
+    border-radius: 4px;
+}
+
+.swatches {
+    padding-top: 54px;
+}
+
+.swatch {
+    width: 75px;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+}
+
+.color {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.name {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+@media screen and (max-width: $mobile-width) {
+    .photo {
+        display: block;
+        width: 320px;
+        height: 240px;
+
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    
+    .inner {
+        width: 360px;
+        height: 410px;
+        background-color: $tertiary-color;
+        padding-top: 20px;
+        border-radius: 4px;
+    }
+
+    .swatches {
+        padding-top: 18px;
+        line-height: 50px;
+    }
+}

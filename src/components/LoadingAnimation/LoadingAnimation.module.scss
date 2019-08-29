@@ -1,0 +1,108 @@
+@import "../../ui.module.scss";
+
+.main {
+    height: 100%;
+    text-align: center;
+}
+
+.main svg {
+    display: inline-block;
+    fill: $primary-color;
+    height: 100%;
+}
+
+:global {
+    .palette-icon-red {
+        animation: red-loop 3s infinite step-start;
+    }
+
+    .palette-icon-green {
+        animation: green-loop 3s infinite step-start;
+    }
+
+    .palette-icon-blue {
+        animation: blue-loop 3s infinite step-start;
+    }
+
+    .palette-icon-yellow {
+        animation: yellow-loop 3s infinite step-start;
+    }
+}
+
+@keyframes :global(red-loop) {
+    0% {
+        fill: red;
+    }
+    25% {
+        fill: lightgreen;
+    }
+    50% {
+        fill: blue;
+    }
+    75% {
+        fill: yellow;
+    }
+    100% {
+        fill: red;
+    }
+}
+
+@keyframes :global(green-loop) {
+    0% {
+        fill: yellow;
+    }
+    25% {
+        fill: red;
+    }
+    50% {
+        fill: lightgreen;
+    }
+    75% {
+        fill: blue;
+    }
+    100% {
+        fill: yellow;
+    }
+}
+
+@keyframes :global(blue-loop) {
+    0% {
+        fill: blue;
+    }
+    25% {
+        fill: yellow;
+    }
+    50% {
+        fill: red;
+    }
+    75% {
+        fill: lightgreen;
+    }
+    100% {
+        fill: blue;
+    }
+}
+
+@keyframes :global(yellow-loop) {
+    0% {
+        fill: lightgreen;
+    }
+    25% {
+        fill: blue;
+    }
+    50% {
+        fill: yellow;
+    }
+    75% {
+        fill: red;
+    }
+    100% {
+        fill: lightgreen;
+    }
+} 
+
+
+// red, green, blue yellow
+
+@media screen and (max-width: $mobile-width) {
+}

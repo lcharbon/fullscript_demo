@@ -1,0 +1,13 @@
+const TestComponent = require('./TestComponent.js').TestComponent;
+
+class {{ namePascal }} extends TestComponent {
+    constructor(options) {
+        super(options);
+    }
+}
+
+module.exports.{{ nameCamel }} = function(options) {
+    return new {{ namePascal }}(options);
+};
+
+module.exports.{{ namePascal }} = {{ namePascal }};

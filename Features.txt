@@ -1,0 +1,14 @@
+Script to quickly generate view & components.
+Settings in JSON file.
+Search request limiting.
+Palette object factory.
+React life cycle methods (Palette display component).
+Centralized styles.
+CSS Modules.
+Sass CSS Preprosesor.
+Sass helper functions (DarkRoomView).
+React router (route to color modal).
+SVG Icons Animated.
+CSS animation (Loading icon).
+Pagination.
+Mobile view Media queries.

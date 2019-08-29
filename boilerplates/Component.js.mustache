@@ -1,0 +1,25 @@
+// Core
+import React, { Component } from 'react';
+import $T from '../../support/translations.js';
+
+// Components
+
+// Styles
+import styles from './{{ name }}.module.scss';
+
+class {{ name }} extends Component {
+    styles = { ...this.styles, ...styles };
+    
+    constructor(props, context) {
+        super(props, context);
+    }
+    
+    render() {
+        return (
+            <div className={ this.styles["main"] }>
+            </div>
+        )
+	}
+}
+
+export default {{ name }};

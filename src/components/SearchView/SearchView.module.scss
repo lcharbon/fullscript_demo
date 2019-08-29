@@ -1,0 +1,82 @@
+@import "../../ui.module.scss";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primary-color;
+    width: 100%;
+}
+
+.inner-header {
+    position: relative;
+    width: 1000px;
+    height: 76px;
+    margin: 0 auto;
+}
+
+.title-container {
+    position: absolute;
+    left: 12px;
+}
+
+.input-container {
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    width: 550px;
+}
+
+.palette-list {
+    margin: 0 auto;
+    padding: 90px 0;
+    width: 1000px;
+}
+
+.empty-list {
+    margin-top: 30px;
+    padding: 20px 12px;
+    text-align: center;
+    font-size: 18px;
+	color: #999999;
+    font-weight: normal;
+    background-color: $tertiary-color
+}
+
+.loading-section {
+    padding-top: 25px;
+}
+
+.loading-container {
+    height: 90px;
+}
+
+@media screen and (max-width: $mobile-width) {
+    .palette-list {
+        margin: auto;
+        padding: 130px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .inner-header {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .title-container {
+        position: static;
+        left: 12px;
+        text-align: center;
+    }
+    
+    .input-container {
+        position: static;
+        top: 18px;
+        right: 12px;
+        width: 90%;
+        padding: 0 5%;
+    }
+}

@@ -1,0 +1,30 @@
+/* Fonts */
+$primary-font: 'Gloria Hallelujah', cursive;
+
+/* Colors */
+$primary-color: #3B9DA3;
+$secondary-color: #B8AD69;
+$tertiary-color: #E5E5E6;
+$quaternary-color: #d8d2cf;
+$quinary-color: #3F444D;
+$senary-color: #713131;
+
+/* measurements */
+$mobile-width: 640px;
+
+body {
+  background-color: $quaternary-color;
+}
+
+.App {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

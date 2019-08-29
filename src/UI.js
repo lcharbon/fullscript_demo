@@ -1,13 +1,20 @@
+// Core
 import React from 'react';
-import './UI.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import './ui.module.scss';
+
+// Compoenents
+import SearchView from './components/SearchView/SearchView';
+import DarkRoomView from './components/DarkRoomView/DarkRoomView';
 
 function UI() {
   return (
-    <div className="App">
-      <h1>
-      </h1>
-
-    </div>
+	<Router>
+		<div className="App">
+			<SearchView/>
+			<Route exact path="/swatch/:colorHex" component={DarkRoomView}/>
+		</div>
+	</Router>
   );
 }
 
