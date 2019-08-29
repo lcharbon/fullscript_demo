@@ -1,7 +1,3 @@
-Script to quickly generate view & components.
-Settings in JSON file.
-Search request limiting.
-Palette object factory.
 React life cycle methods (Palette display component).
 Centralized styles.
 CSS Modules.
@@ -12,3 +8,7 @@ SVG Icons Animated.
 CSS animation (Loading icon).
 Pagination.
 Mobile view Media queries.
+Settings in JSON file.
+Search request limiting.
+Palette object factory.
+Node script to quickly generate view & components.
