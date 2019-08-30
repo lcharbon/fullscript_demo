@@ -16,6 +16,8 @@ You will also see any lint errors in the console.
 
 Runs the unit tests.
 
-### `npm test-units`
+### `npm test-e2e`
 
 Runs the end to end tests.
+
+*App is hosted on S3 at: http://fullscript-demo.s3-website.ca-central-1.amazonaws.com
