@@ -53,10 +53,6 @@ class Model {
 	}
 
 	async load() {
-		// let request = new APIRequest("GET", this.postRoute + '/' + this.id);
-		// let data = await request.send();
-
-		// this.applyAPIData(data);
 	}
 }
 

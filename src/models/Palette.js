@@ -1,11 +1,16 @@
 // Core
 import settings from '../settings/settings'
-import paletteGenerator from '../paletteGenerator';
 import { toJson } from "unsplash-js";
+import Unsplash from 'unsplash-js';
 import * as Vibrant from 'node-vibrant'
 
 // Models
 import Model from './Model';
+
+const upslash = new Unsplash({
+    applicationId: settings.accessKey,
+    secret: settings.secretKey,
+});
 
 class Palette extends Model {
     static store = {};
@@ -21,7 +26,7 @@ class Palette extends Model {
 
         this.currentSearch = search;
         
-        photos = (await paletteGenerator.upslash.search.photos(search, page, this.pageLimit).then(toJson)).results;
+        photos = (await upslash.search.photos(search, page, this.pageLimit).then(toJson)).results;
 
         return photos.map((photoData) => {
             let palette = new this({
