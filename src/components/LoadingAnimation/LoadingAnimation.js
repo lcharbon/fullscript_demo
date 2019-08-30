@@ -1,6 +1,5 @@
 // Core
 import React, { Component } from 'react';
-import $T from '../../support/translations.js';
 
 // Components
 
@@ -12,10 +11,6 @@ import styles from './LoadingAnimation.module.scss';
 
 class LoadingAnimation extends Component {
     styles = { ...this.styles, ...styles };
-    
-    constructor(props, context) {
-        super(props, context);
-    }
     
     render() {
         return (

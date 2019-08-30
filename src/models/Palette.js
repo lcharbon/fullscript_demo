@@ -19,7 +19,6 @@ class Palette extends Model {
     static pageLimit = 10;
     
     static async search(search, page) {
-        let paletteData;
         let photos = [];
 
         if (search !== this.currentSearch) this.flushStore();

@@ -9,10 +9,6 @@ import styles from './Title.module.scss';
 class Title extends Component {
     styles = { ...this.styles, ...styles };
     
-    constructor(props, context) {
-        super(props, context);
-    }
-    
     render() {
         return (
             <div className={ this.styles["main"] }>

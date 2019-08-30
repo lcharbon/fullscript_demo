@@ -1,6 +1,5 @@
 // Core
 import React, { Component } from 'react';
-import $T from '../../support/translations.js';
 
 // Components
 
@@ -9,10 +8,6 @@ import styles from './DarkRoomView.module.scss';
 
 class DarkRoomView extends Component {
     styles = { ...this.styles, ...styles };
-    
-    constructor(props, context) {
-        super(props, context);
-    }
 
     handleOverlayCLick() {
         this.props.history.replace("/")

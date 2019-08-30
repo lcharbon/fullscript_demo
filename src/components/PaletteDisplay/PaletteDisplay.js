@@ -56,6 +56,7 @@ class PaletteDisplay extends Component {
                     <img 
                         src={ this.props.palette.photoURL }
                         className={ this.styles["photo"] }
+                        alt={$T("3")}
                     />
                      <div className={ this.styles["swatches"] }>
                         { settings.shades.map(this.renderSwatch.bind(this)) }

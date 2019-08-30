@@ -46,7 +46,6 @@ class SearchView extends Component {
 
         this.searchTimeout = setTimeout(async () => {
             let searchPromise = Palette.search(value, 1);
-            let palettes = [];
 
             this.lastSearch = value;
 
@@ -64,9 +63,6 @@ class SearchView extends Component {
     }
 
     handleScroll(event) {
-        let wasPaletteCount = this.state.palettes.length;
-        let palettes = [];
-
         if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
             this.paginate();
         }
