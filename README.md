@@ -1,6 +1,6 @@
 ## Available Scripts
 
-### `npm test-units`
+### `npm install`
 
 Installs the packages needed to run the app.
 
