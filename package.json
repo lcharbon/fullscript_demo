@@ -152,7 +152,7 @@
     "chromedriver": "^76.0.1",
     "ignore-styles": "^5.0.1",
     "mustache": "^3.0.3",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "wdio-chromedriver-service": "^5.0.2"
   }
 }
